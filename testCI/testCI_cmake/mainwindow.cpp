@@ -1,7 +1,6 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include "QMessageBox"
-
+#include "./ui_mainwindow.h"
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,5 +17,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pbTest_clicked()
 {
-    QMessageBox::information(nullptr, "HelloCI", "Hello, CI!");
+    QMessageBox::information(nullptr, "testCI", "Hello, CI!");
 }
